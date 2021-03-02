@@ -8,7 +8,7 @@ public class Problem3 {
 		System.out.println("The odd numbers are:");
 		for (int i = 100; i <= 199; i++) {
 			if (i % 2 == 1) {
-				System.out.print(" " + i + " ");
+				System.out.print(i + " ");
 			}
 		}
 	}

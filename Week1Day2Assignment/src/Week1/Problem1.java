@@ -6,14 +6,14 @@ public class Problem1 {
 		// 1)Try all the loops by yourself with some use case of your own
 		//for loop
 		for (int i = 0; i <= 20; i++) {
-			System.out.print(" " + i + " ");
+			System.out.print(i + " ");
 		}
 		System.out.println(" ");
 
 		//while loop
 		int n = 30;
 		while (n >= 0) {
-			System.out.print(" " + n + " ");
+			System.out.print(n + " ");
 			n--;
 		}
 		System.out.println(" ");
@@ -21,7 +21,7 @@ public class Problem1 {
 		int a = 1;
 		do {
 			a += 1;
-			System.out.print(" " + a + " ");
+			System.out.print(a + " ");
 		} while (a <= 15);
 
 	}

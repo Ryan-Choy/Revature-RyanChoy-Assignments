@@ -14,7 +14,7 @@ public class Problem2 {
 		
 		for(int i = 100; i <= 999;i++) {
 			if (palidrome(i)){
-				System.out.print(" "+ i + " ");
+				System.out.print(i + " ");
 			}
 		}
 	}
