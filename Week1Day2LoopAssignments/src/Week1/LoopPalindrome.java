@@ -1,6 +1,6 @@
 package Week1;
 
-public class Problem2 {
+public class LoopPalindrome {
 	// Problem 2 Print all the palindrome numbers between 100 and 999
 	
 	public static void main(String[] args) {

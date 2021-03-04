@@ -2,7 +2,7 @@ package Week1;
 
 import java.util.Scanner;
 
-public class Problem5 {
+public class LoopInput {
 	public static void main(String[] args) {
 		// modify one of the problems to include user input
 		Scanner scan = new Scanner(System.in);

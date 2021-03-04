@@ -1,6 +1,6 @@
 package Week1;
 
-public class Problem3 {
+public class LoopOdd {
 	// Problem 3: Find all the odd numbers between 100 and 199
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package Week1;
 
-public class Problem4 {
+public class LoopSum {
 	public static void main(String[] args) {
 		
 		/*Problem 4: Find the sum of all even numbers between 1 and 100, 

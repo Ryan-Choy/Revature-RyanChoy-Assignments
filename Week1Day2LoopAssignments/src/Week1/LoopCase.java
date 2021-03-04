@@ -1,6 +1,6 @@
 package Week1;
 
-public class Problem1 {
+public class LoopCase {
 	public static void main(String[] args) {
 		// Problem 1
 		// 1)Try all the loops by yourself with some use case of your own
