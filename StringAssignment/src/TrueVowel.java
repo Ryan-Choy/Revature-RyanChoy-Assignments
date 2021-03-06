@@ -25,7 +25,7 @@ public class TrueVowel {
 				a += 1;
 				break;
 			case 'e':
-				e++;
+				e += 1;
 				break;
 			case 'i':
 				i += 1;
