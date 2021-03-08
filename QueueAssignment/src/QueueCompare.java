@@ -10,14 +10,12 @@ public class QueueCompare {
 
 	Queue<Integer> pq = new PriorityQueue<>();
 	//filling queue
-	pq.add(1);
-	pq.add(5);
-	pq.add(6);
-	pq.add(88);
-	pq.add(99);
-	pq.add(15);
-	pq.add(63);
-	pq.add(54);
+	
+	int[] Arr = {1,5,6,88,99,15,63,54};
+	
+	for (int num:Arr) {
+		pq.add(num);
+	}
 	
 	System.out.println("The PriorityQueue is: ");
 	System.out.println(pq);
@@ -86,7 +84,7 @@ public class QueueCompare {
 	ll.add(null);
 	System.out.println(ll);
 	
-	System.out.println("\n\nThe only difference between PriorityQueue and LinkedList is that LinkedList can accept null values.");
+	System.out.println("\n\nThe differences between PriorityQueue and LinkedList are: LinkedList can accept null values and LinkedList is double linked.");
 	
 	}
 }
