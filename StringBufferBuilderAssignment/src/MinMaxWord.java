@@ -10,20 +10,20 @@ public class MinMaxWord {
 		String min = ar[0];
 
 		for (int i = 1; i < ar.length; i++) {
-			if (max.length() > ar[i].length()) {
-
-			} else {
+			if (max.length() < ar[i].length()) {
 				max = ar[i];
-			}
-			if (min.length() < ar[i].length()) {
-
-			} else {
+			} 
+				
+			
+			if (min.length() > ar[i].length()) {
 				min = ar[i];
-			}
+			} 
+				
+		
 
 		}
-		System.out.println("The word with the most amount of letters is: " + max
-				+ "\nThe word with the least amount of letters is: " + min);
+		System.out.println("The first word with the most amount of letters is: " + max
+				+ "\nThe first word with the least amount of letters is: " + min);
 	}
 
 }

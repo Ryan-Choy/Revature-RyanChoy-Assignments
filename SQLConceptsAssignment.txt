@@ -1,0 +1,89 @@
+1)What is RDBMS?
+	RDBMS stands for relational database management systems.
+	-Refers to the database program itself
+	-Executes queries on data
+	--With queries, one can perform the following actions on data: retrieving, updating, and adding
+	
+	Relational databases are databases that stores information in tables that contain rows and columns, similar to how spreadsheets store data.
+	-Each row is a specific record.
+	-Each column is a specific property of the records.
+
+2)Why a developer should learn SQL?
+	Developers should learn how to use SQL for several reasons:
+	1. Relational databases and the SQL programs used to interact with them are everywhere.
+	2. It is a declarative language, meaning one just needs to declare the data they want and the software's engine will do all the heavy lifting.
+	3. It uses an English-like syntax for ease of use.
+
+3)What is Normalization?
+	Normalization is the process of reducing redundancy and duplicate data in a database, 
+	making it more organized and easier to read and maintain.
+	
+4)Types of Normalization( till 3NF(third normal form))
+	The following Normalization types are:
+	1. 0NF: The database has not gone through any normalization process at all, most likely messy and chaotic.
+	2. 1NF: Data is atomic, aka any columns that can be split are separated and the table has a Primary Key. Referred to as the key
+	3. 2NF: 1NF + no partial dependencies, meaning there are no columns that are dependent on only one part of the composite key. the whole key
+	4. 3NF: 2NF + no transitive dependencies, all columns must be directly related to the primary/composite key. Nothing but the key.
+
+5)ACID properties
+	ACID is the 4 properties of Transactions, the operations done to manipulate the data in the database before they are COMMIT 'ed. 
+	Is also an unit of work
+	
+	ACID stands for
+	(A)tomicity: All transactions will execute successfully or not at all (all or nothing)
+	(C)onsistency: Constrainsts are enforced for every committed transaction, meaning parameters and rules such as primary/foreign keys, data types, checks, etc.
+			will be upheld. If any are broken or violated, the transaction in question will be rolled back.
+	(I)solation: If more than one transactions are occuring at the same time and are working on the same data, they should not be interacting or disturbing each other.
+			thus Isolation gives users some guarantee that concurrently running transactions do not interfere with each other.
+	(D)urability: Any change made to the database will persist, meaning if that the database suddenly crashes or loses power, the changes will not be lost.
+
+6)Isolation levels
+	Measures implemented to prevent read phenomena, strange occurances or erros that happen when the data is being manipulated by
+	two or more transactions at the same time. The more strict the isolation level, the less chance of errors happening but it comes at a risk of
+	causing performance issues.
+
+	There are four isolation levels, which are:
+	1)Read Uncommitted
+		Transactions do not issue shared locks to prevent other transactions from modifying the data read by the current transaction and transactions are
+		not blocked by exclusive locks, allowing transactions to read modifications that are not yet committed.
+		This means that reading the data is not consistant due to the fact it can change any time, leading to dirty reads, a read phenomena.
+
+	2)Read Committed
+		Transactions issue exclusive locks, preventing data modifications that are not committed yet to be read but still allows data that is being read by one
+		transaction to be modified by other transactions. 
+
+	3)Repeatable Read
+		Issues shared and exclusive locks to prevent outside transactions from modifying the data being read by the current transactions until it finishes.
+		However, transactions can insert new rows that matches the search considtion issued by the current transaction, which will be retrieved when the transaction retries the
+		statment, resulting in phantom rows/data.
+
+	4)Serializable
+		Contains the properties of the previous levels and adds a lock that prevents the addition of new data/rows from other transactions.
+	
+7)What is postgresSQL? Data types in Postgressql.
+
+	PostgreSQL is an open source object-relational database system that uses and extends 
+	the SQL language combined with many features that safely store and scale the most complicated data workloads.
+	It is been active since 1986 and has been continously worked on, runs on all major operating sytems, ACID compliant since 2001,
+	and has a wide variety of add-ons.
+
+	PostgreSQL supports the following datatypes:
+	-Primitives: Integer, Numeric, String, Boolean
+	-Structured: Date/Time, Array, Range, UUID
+	-Document: JSON/JSONB, XML, Key-value (Hstore)
+	-Geometry: Point, Line, Circle, Polygon
+	-Customizations: Composite, Custom Types
+	
+	
+8)What is Integrity Constraints?
+	Integrity constraints are rules that are defined for specific columns, ensuring consistency and integrity of the data in a table.
+	Some of the more commenly used ones are:
+		-PRIMARY KEY
+		-FOREIGN KEY
+		-NOT NULL
+		-UNIQUE
+		-CHECK
+		-DEFAULT
+	
+	
+9)Start practicising writing some basic Select statements from hackerrank.com or sqlzoo.net or w3schools.com
