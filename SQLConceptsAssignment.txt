@@ -38,7 +38,7 @@
 	(D)urability: Any change made to the database will persist, meaning if that the database suddenly crashes or loses power, the changes will not be lost.
 
 6)Isolation levels
-	Measures implemented to prevent read phenomena, strange occurances or erros that happen when the data is being manipulated by
+	Measures implemented to prevent read phenomena, strange occurances or errors that happen when the data is being manipulated by
 	two or more transactions at the same time. The more strict the isolation level, the less chance of errors happening but it comes at a risk of
 	causing performance issues.
 

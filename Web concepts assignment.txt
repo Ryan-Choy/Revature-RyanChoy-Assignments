@@ -1,0 +1,85 @@
+﻿1)Distributed Web Applications
+They are programs that are run on multiple computers and communicate through a network. Some of them are actually two separate programs, the back end being the server and the front end being the client. Back end software runs on a shared system and manages shared resources. Front end software runs on the workstation and it is what the user sees when they use the application. An example would be web browsers.
+
+
+2)Client-Server Architecture
+Client-Server Architecture is a computing model where a server hosts, delivers, and manages most of the resources and services used by the client. It consists of one or more client computers connected to a central server over a network or internet connection.
+
+
+3)Client Side Scripting
+Code executed by web browsers, runs on user computers, and the source code is visible
+
+
+4)Server Side Scripting
+Code executed by web servers, server side only, provides more security for data.
+
+
+5)How the request made by the client will be processed by server and return back the response.
+1. Client (brower, program, etc.) opens a connection to the server and sends a request
+2. Server processes the request
+3. Server generates a response
+4. Server closes connection (if there is a command to do so)
+
+
+6)Http protocol
+The Hypertext Transfer Protocol is an application layer protocol for distributed, collaborative, hypermedia information systems. It is the foundation of any data exchange on the web and has been around for a long time.
+
+
+7)http vs https
+* HTTP is unsecured while HTTPS is secured
+* HTTP sends data over port 80 and HTTPS uses port 443
+* HTTP operates at the application layer, HTTPS operates at the transport layer
+* HTTPS needs a SSL certificate that is signed by a CA while HTTP does not.
+* HTTPS requires validation while HTTP does not, meaning the latter is faster
+* Data is not encrypted in http and is encrypted in https (before sending)
+        
+        
+8)different http status codes
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+
+1. Informational responses (100–199)
+2. Successful responses (200–299)
+3. Redirects (300–399)
+4. Client errors (400–499)
+5. Server errors (500–599)
+
+
+
+
+9)why http is called as stateless protocol
+        It is called a stateless protocol because the server does not relate a single, valid command to any previous or future commands, meaning each command is independent of each other.
+
+
+
+
+10)http methods or verbs and difference between them.
+        Http methods are keywords that represent a specific action to be performed for a given resource. They are sometimes referred to as verbs and so there are no differences between the two.
+
+
+11)Web Server
+        Web server is made of two components, the hardware and the software. The hardware is a computer or a network of computers that runs the software and stores the component files for the software. The software determines how users access the files through the web. At the very minimum, a web server is a http server.
+
+
+12)Application Server
+        It is a server specifically designed to run applications, a combination of hardware and software that provide an environment to run programs.
+
+
+13)Web Server VS Application Server
+                Web Servers
+* Web Server accepts and fulfills requests for static content (html pages, files, etc.)
+* Only works with web based applications and runs in http only
+* No multi thread support
+* Not resource intensive
+
+
+                Application Servers
+* Application server works with dynamic content
+* Gives business logic to applications using protocols (http among them)
+* Serves both web and enterprise based programs
+* Supports multithreading to process requests in parallel
+* Resource intensive
+
+
+14)JEE Architecture
+* Makes Java EE applications easy to write since the architecture organizes business logic into components that can be reused.
